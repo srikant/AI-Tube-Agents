@@ -101,6 +101,7 @@ This document outlines how state is managed in the app, including local state, g
 
 ### Frontend:
 
+```md
 src/
 ├── store/ # Zustand global state
 │ ├── authStore.js # Authentication state
@@ -112,9 +113,11 @@ src/
 │ ├── useChat.js # Chat hook
 ├── utils/ # Utility functions
 │ ├── localStorage.js # LocalStorage utilities
+```
 
 ### Backend:
 
+```md
 src/
 ├── auth/ # Authentication module
 │ ├── session.ts # Session management
@@ -123,6 +126,7 @@ src/
 │ ├── repositories/ # Database repositories
 ├── sockets/ # Socket.IO module
 │ ├── chat.ts # Real-time chat state
+```
 
 ---
 
@@ -143,21 +147,27 @@ const useAuthStore = create((set) => ({
 export default useAuthStore;
 ```
 
-Frontend: React Query (useVideos.js)
-import { useQuery } from 'react-query';
-import axios from 'axios';
+### Frontend: React Query (useVideos.js)
+
+```javascript
+import { useQuery } from "react-query";
+import axios from "axios";
 
 const fetchVideos = async (keyword) => {
-const response = await axios.get(`/api/videos?keyword=${keyword}`);
-return response.data;
+  const response = await axios.get(`/api/videos?keyword=${keyword}`);
+  return response.data;
 };
 
 const useVideos = (keyword) => {
-return useQuery(['videos', keyword], () => fetchVideos(keyword));
+  return useQuery(["videos", keyword], () => fetchVideos(keyword));
 };
 
 export default useVideos;
-Backend: Session Management (session.ts)
+```
+
+### Backend: Session Management (session.ts)
+
+```javascript
 import { Injectable } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 
@@ -173,3 +183,4 @@ verifyToken(token: string) {
 return this.jwtService.verify(token);
 }
 }
+```

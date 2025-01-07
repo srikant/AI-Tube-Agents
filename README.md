@@ -138,12 +138,12 @@ git push origin feature/your-feature-name
 
 ## This project is licensed under the MIT License. See the LICENSE file for details.
 
-### Acknowledgments
+# Acknowledgments
 
-# Next.js for the frontend framework.
+- **Next.js** for the frontend framework.
 
-# NestJS for the backend framework.
+- **NestJS** for the backend framework.
 
-# Chakra UI and Tailwind CSS for styling.
+- **Chakra UI** and **Tailwind CSS** for styling.
 
-# YouTube Data API, OpenAI API, and Deepseek API for third-party integrations.
+- **YouTube Data API, OpenAI API**, and **Deepseek API** for third-party integrations.

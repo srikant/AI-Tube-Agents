@@ -90,21 +90,21 @@ npm run start:frontend
 
 - **[Product Requirements Document (PRD)](/docs/prd.md)**
 
-- **Frontend Documentation**
+- **[Frontend Documentation](/docs/frontend.md)**
 
-- **Backend Documentation**
+- **[Backend Documentation](/docs/backend.md)**
 
-- **Third-Party Libraries Documentation**
+- **[Third-Party Libraries Documentation](/docs/third-party-libraries.md)**
 
-- **User Flow Documentation**
+- **[User Flow Documentation](/docs/user-flow.md)**
 
-- **State Management Documentation**
+- **[State Management Documentation](/docs/state-management.md)**
 
-- **Design Specification Document**
+- **[Design Specification Document](/docs/design-specification.md)**
 
-- **Database Schema Documentation**
+- **[Database Schema Documentation](/docs/database-schema.md)**
 
-- **API Documentation**
+- **[API Documentation](/docs/api.md)**
 
 ---
 

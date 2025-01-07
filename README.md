@@ -55,7 +55,7 @@ This project is a web app designed to help YouTube creators generate fresh video
 
 2. Set up environment variables:
 
-Create a .env file in the root directory.
+Create a **.env** file in the root directory.
 
 Add the following variables:
 
@@ -82,7 +82,7 @@ npm run start:backend
 npm run start:frontend
 ```
 
-3. Open your browser and navigate to http://localhost:3000.
+3. Open your browser and navigate to `http://localhost:3000`.
 
 ---
 

@@ -27,7 +27,7 @@ This document defines the RESTful API endpoints for the app, including request/r
 
 1. Authentication
    a. - **Login**
-   **Endpoint**: POST /auth/login
+   **Endpoint**: `POST /auth/login`
 
 - **Purpose**: Authenticate a user and return a JWT token.
 
@@ -53,7 +53,7 @@ This document defines the RESTful API endpoints for the app, including request/r
 ```
 
 b. **Sign Up**
-**Endpoint**: POST /auth/signup
+**Endpoint**: `POST /auth/signup`
 
 **Purpose**: Create a new user account and return a JWT token.
 
@@ -84,12 +84,12 @@ b. **Sign Up**
 
 a. **Search Videos**
 
-- **Endpoint**: GET /videos
+- **Endpoint**: `GET /videos`
 - **Purpose**: Fetch videos based on a keyword search.
 - **Query Parameters**:
 
-  - keyword (string): The search keyword.
-  - filters (optional): Filters like viewCount, uploadDate.
+  - `keyword` (string): The search keyword.
+  - `filters` (optional): Filters like `viewCount`, `uploadDate`.
 
 - _Response_:
 
@@ -108,11 +108,11 @@ a. **Search Videos**
 
 b. **Get Trending Videos**
 
-- **Endpoint**: GET /videos/trending
+- **Endpoint**: `GET /videos/trending`
 
 - **Purpose**: Fetch trending videos in specific categories.
 - **Query Parameters**:
-  category (string): The category (e.g., gaming, tech, lifestyle).
+  `category` (string): The category (e.g., gaming, tech, lifestyle).
 
 **Response**:
 
@@ -134,7 +134,7 @@ b. **Get Trending Videos**
 3. **Ideas**
    a. **Analyze Video**
 
-- **Endpoint**: POST /ideas/analyze
+- **Endpoint**: `POST /ideas/analyze`
 
 - **Purpose**: Analyze a video transcript and generate ideas.
 
@@ -159,13 +159,13 @@ b. **Get Trending Videos**
 
 b. **Get User Ideas**
 
-- **Endpoint**: GET /ideas
+- **Endpoint**: `GET /ideas`
 
 - **Purpose**: Fetch AI-generated ideas for a user.
 
 - **Query Parameters**:
 
-userId (string): The ID of the user.
+`userId` (string): The ID of the user.
 
 - **Response**:
 
@@ -185,7 +185,7 @@ userId (string): The ID of the user.
 4. **_Chat_**
    a. **Send Message**
 
-- **Endpoint**: POST /chat
+- **Endpoint**: `POST /chat`
 
 - **Purpose**: Send a user message to the LLM and receive a response.
 
@@ -211,13 +211,13 @@ userId (string): The ID of the user.
 
 b. **Get Chat History**
 
-- **Endpoint**: GET /chat
+- **Endpoint**: `GET /chat`
 
 - **Purpose**: Fetch chat history for a user.
 
 - **Query Parameters**:
 
-userId (string): The ID of the user.
+`userId` (string): The ID of the user.
 
 - **Response**:
 

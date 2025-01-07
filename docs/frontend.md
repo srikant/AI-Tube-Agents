@@ -106,6 +106,7 @@ The frontend of the app is built using **Next.js** for its performance and SEO b
 
 ## Folder Structure
 
+```md
 src/
 ├── components/ # Reusable UI components
 ├── pages/ # Next.js pages
@@ -114,6 +115,7 @@ src/
 ├── utils/ # Utility functions
 ├── hooks/ # Custom React hooks
 └── constants/ # Constants (e.g., API endpoints)
+```
 
 ---
 

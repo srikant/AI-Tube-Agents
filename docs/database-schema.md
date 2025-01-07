@@ -115,35 +115,51 @@ This document defines the database schema for the app, including tables, relatio
 SELECT * FROM users WHERE email = 'user@example.com';
 ```
 
-2. Fetch Videos by Keyword:
+### 2. **Fetch Videos by Keyword:**
+
+```sql
    SELECT \* FROM videos WHERE title ILIKE '%keyword%';
-3. Fetch Ideas for a User:
+```
+
+### 3. **Fetch Ideas for a User:**
+
+```sql
    SELECT \* FROM ideas WHERE userId = 'user-uuid';
+```
 
-4. Fetch Chat History for a User:
+### 4. **Fetch Chat History for a User:**
+
+```sql
    SELECT \* FROM chats WHERE userId = 'user-uuid' ORDER BY createdAt DESC;
+```
 
-Migrations
-Purpose: Manage schema changes over time.
+---
 
-Tools: TypeORM migrations.
+## Migrations
 
-Example Migration:
-import { MigrationInterface, QueryRunner } from 'typeorm';
+- **Purpose**: Manage schema changes over time.
+
+- **Tools**: TypeORM migrations.
+
+- **Example Migration**:
+
+```typescript
+import { MigrationInterface, QueryRunner } from "typeorm";
 
 export class CreateUsersTable1712345678901 implements MigrationInterface {
-public async up(queryRunner: QueryRunner): Promise<void> {
-await queryRunner.query(`      CREATE TABLE users (
+  public async up(queryRunner: QueryRunner): Promise<void> {
+    await queryRunner.query(`     CREATE TABLE users (
         id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
         email VARCHAR(255) UNIQUE NOT NULL,
         password VARCHAR(255) NOT NULL,
         createdAt TIMESTAMP DEFAULT NOW(),
         updatedAt TIMESTAMP DEFAULT NOW()
       );
-   `);
-}
+  `);
+  }
 
-public async down(queryRunner: QueryRunner): Promise<void> {
-await queryRunner.query(`DROP TABLE users;`);
+  public async down(queryRunner: QueryRunner): Promise<void> {
+    await queryRunner.query(`DROP TABLE users;`);
+  }
 }
-}
+```

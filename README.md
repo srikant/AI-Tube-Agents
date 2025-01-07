@@ -86,29 +86,29 @@ npm run start:frontend
 
 ---
 
-### Documentation
+## Documentation
 
-# Product Requirements Document (PRD)
+### Product Requirements Document (PRD)
 
-# Frontend Documentation
+### Frontend Documentation
 
-# Backend Documentation
+### Backend Documentation
 
-# Third-Party Libraries Documentation
+### Third-Party Libraries Documentation
 
-# User Flow Documentation
+### User Flow Documentation
 
-# State Management Documentation
+### State Management Documentation
 
-# Design Specification Document
+### Design Specification Document
 
-# Database Schema Documentation
+### Database Schema Documentation
 
-# API Documentation
+### API Documentation
 
 ---
 
-### Contributing
+## Contributing
 
 1. Fork the repository.
 
@@ -134,11 +134,11 @@ git push origin feature/your-feature-name
 
 ---
 
-### License
+## License
 
-## This project is licensed under the MIT License. See the LICENSE file for details.
+### This project is licensed under the MIT License. See the LICENSE file for details.
 
-# Acknowledgments
+## Acknowledgments
 
 - **Next.js** for the frontend framework.
 

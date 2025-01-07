@@ -35,37 +35,36 @@ graph TD
     D --> E
 ```
 
-Core User Journey
-Steps:
-Dashboard:
+### Core User Journey
 
-User lands on the dashboard after logging in.
+**Steps:**
 
-Options: "Search Videos," "Trending Videos," "Chat."
+1. **Dashboard:**
 
-Search Videos:
+   - User lands on the dashboard after logging in.
+   - Options: "Search Videos," "Trending Videos," "Chat."
 
-User enters a keyword and clicks "Search."
+2. **Search Videos:**
 
-App displays a list of related videos.
+   - User enters a keyword and clicks "Search."
+   - App displays a list of related videos.
 
-Analyze Videos:
+3. **Analyze Videos:**
 
-User selects a video for analysis.
+   - User selects a video for analysis.
+   - App analyzes the video transcript and generates ideas.
 
-App analyzes the video transcript and generates ideas.
+4. **Refine Ideas:**
 
-Refine Ideas:
+   - User clicks "Chat" to refine ideas.
+   - User interacts with the LLM to customize ideas.
 
-User clicks "Chat" to refine ideas.
+5. **Save/Export Ideas:**
+   - User saves or exports the refined ideas in CSV format.
 
-User interacts with the LLM to customize ideas.
+#### Mermaid Diagram:
 
-Save/Export Ideas:
-
-User saves or exports the refined ideas in CSV format.
-
-Mermaid Diagram:
+```mermaid
 graph TD
 A[Dashboard] --> B{User Action}
 B -->|Search Videos| C[Keyword Search]
@@ -75,27 +74,31 @@ E -->|Analyze Video| F[Generate Ideas]
 F --> G{User Action}
 G -->|Refine Ideas| H[Chat with LLM]
 H --> I[Save/Export Ideas]
-Error Handling
-Scenarios:
-Invalid Login:
+```
 
-User enters incorrect credentials.
+---
 
-App displays an error message: "Invalid email or password."
+### Error Handling
 
-Failed API Call:
+#### Scenarios:
 
-App fails to fetch data from the YouTube API.
+1. **Invalid Login:**
 
-App displays an error message: "Failed to fetch videos. Please try again."
+   - User enters incorrect credentials.
+   - App displays an error message: "Invalid email or password."
 
-Network Issues:
+2. **Failed API Call:**
 
-User loses internet connection.
+   - App fails to fetch data from the YouTube API.
+   - App displays an error message: "Failed to fetch videos. Please try again."
 
-App displays an error message: "Network error. Please check your connection."
+3. **Network Issues:**
+   - User loses internet connection.
+   - App displays an error message: "Network error. Please check your connection."
 
-Mermaid Diagram:
+#### Mermaid Diagram:
+
+```mermaid
 graph TD
 A[User Action] --> B{Error?}
 B -->|Yes| C[Display Error Message]
@@ -103,27 +106,31 @@ B -->|No| D[Continue Flow]
 C --> E{User Action}
 E -->|Retry| A
 E -->|Cancel| F[Exit Flow]
-Edge Cases
-Scenarios:
-Offline Mode:
+```
 
-User tries to use the app without an internet connection.
+---
 
-App displays a message: "You are offline. Please connect to the internet."
+### Edge Cases
 
-Incomplete Data:
+#### Scenarios:
 
-App fails to fetch complete video data.
+1. **Offline Mode:**
 
-App displays a message: "Incomplete data. Please try again."
+   - User tries to use the app without an internet connection.
+   - App displays a message: "You are offline. Please connect to the internet."
 
-Expired Session:
+2. **Incomplete Data:**
 
-User’s session expires while using the app.
+   - App fails to fetch complete video data.
+   - App displays a message: "Incomplete data. Please try again."
 
-App redirects the user to the login page.
+3. **Expired Session:**
+   - User’s session expires while using the app.
+   - App redirects the user to the login page.
 
-Mermaid Diagram:
+#### Mermaid Diagram:
+
+```mermaid
 graph TD
 A[User Action] --> B{Edge Case?}
 B -->|Yes| C[Handle Edge Case]
@@ -131,21 +138,24 @@ B -->|No| D[Continue Flow]
 C --> E{User Action}
 E -->|Retry| A
 E -->|Cancel| F[Exit Flow]
-Alternative Flows
-Scenarios:
-Guest Mode:
+```
 
-User accesses the app without logging in.
+### Alternative Flows
 
-App provides limited functionality (e.g., view trending videos).
+#### Scenarios:
 
-Skip Onboarding:
+1. **Guest Mode:**
 
-User skips the onboarding process.
+   - User accesses the app without logging in.
+   - App provides limited functionality (e.g., view trending videos).
 
-App redirects the user to the dashboard with default settings.
+2. **Skip Onboarding:**
+   - User skips the onboarding process.
+   - App redirects the user to the dashboard with default settings.
 
-Mermaid Diagram:
+#### Mermaid Diagram:
+
+```mermaid
 graph TD
 A[User Action] --> B{Alternative Flow?}
 B -->|Yes| C[Handle Alternative Flow]
@@ -153,18 +163,20 @@ B -->|No| D[Continue Flow]
 C --> E{User Action}
 E -->|Continue| D
 E -->|Cancel| F[Exit Flow]
-User Permissions
-Roles:
-Regular User:
+```
 
-Can search videos, analyze transcripts, and refine ideas.
+### User Permissions
 
-Admin:
+#### Roles:
 
-Can manage users, view analytics, and configure app settings.
+1. **Regular User:**
+   - Can search videos, analyze transcripts, and refine ideas.
+2. **Admin:**
+   - Can manage users, view analytics, and configure app settings.
 
-Mermaid Diagram:
-mermaid
+#### Mermaid Diagram:
+
+```mermaid
 graph TD
 A[User Role] --> B{Admin?}
 B -->|Yes| C[Admin Dashboard]
@@ -175,17 +187,24 @@ C --> G[Configure Settings]
 D --> H[Search Videos]
 D --> I[Analyze Transcripts]
 D --> J[Refine Ideas]
-Notifications
-Triggers:
-New Idea Generated:
+```
 
-App notifies the user when a new idea is generated.
+---
 
-Trending Videos Updated:
+### Notifications
 
-App notifies the user when trending videos are updated.
+#### Triggers:
 
-Mermaid Diagram:
+1. **New Idea Generated:**
+
+   - App notifies the user when a new idea is generated.
+
+2. **Trending Videos Updated:**
+   - App notifies the user when trending videos are updated.
+
+#### Mermaid Diagram:
+
+```mermaid
 graph TD
 A[Trigger] --> B{Notification?}
 B -->|Yes| C[Send Notification]
@@ -193,3 +212,4 @@ B -->|No| D[Continue Flow]
 C --> E{User Action}
 E -->|View| F[Display Notification]
 E -->|Dismiss| G[Continue Flow]
+```

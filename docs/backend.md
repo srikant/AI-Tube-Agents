@@ -159,6 +159,7 @@ The backend of the app is built using **NestJS** for its modular architecture, T
 
 ## Folder Structure
 
+```md
 src/
 ├── auth/ # Authentication module (Clerk integration)
 ├── videos/ # Video search and analysis module
@@ -168,6 +169,7 @@ src/
 ├── utils/ # Utility functions (e.g., error handling, logging)
 ├── constants/ # Constants (e.g., API endpoints, error messages)
 └── main.ts # Entry point for the NestJS application
+```
 
 ---
 

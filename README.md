@@ -88,23 +88,23 @@ npm run start:frontend
 
 ## Documentation
 
-### Product Requirements Document (PRD)
+- **[Product Requirements Document (PRD)](/docs/prd.md)**
 
-### Frontend Documentation
+- **Frontend Documentation**
 
-### Backend Documentation
+- **Backend Documentation**
 
-### Third-Party Libraries Documentation
+- **Third-Party Libraries Documentation**
 
-### User Flow Documentation
+- **User Flow Documentation**
 
-### State Management Documentation
+- **State Management Documentation**
 
-### Design Specification Document
+- **Design Specification Document**
 
-### Database Schema Documentation
+- **Database Schema Documentation**
 
-### API Documentation
+- **API Documentation**
 
 ---
 

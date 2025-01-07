@@ -36,69 +36,114 @@ This project is a web app designed to help YouTube creators generate fresh video
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/yourusername/project-name.git
    ```
-   Navigate to the project directory:
+
+   1. Navigate to the project directory:
+
+   ```bash
    cd project-name
-   Install dependencies:
+   ```
+
+   2. Install dependencies:
+
+   ```bash
    npm install
-   Set up environment variables:
+   ```
+
+2. Set up environment variables:
 
 Create a .env file in the root directory.
 
 Add the following variables:
+
+```env
 DATABASE_URL=postgres://user:password@localhost:5432/dbname
 YOUTUBE_API_KEY=your-youtube-api-key
 OPENAI_API_KEY=your-openai-api-key
 DEEPSEEK_API_KEY=your-deepseek-api-key
 CLERK_API_KEY=your-clerk-api-key
 JWT_SECRET=your-jwt-secret
-Running the App
-Start the backend server:
+```
+
+### Running the App
+
+1. Start the backend server:
+
+```bash
 npm run start:backend
-Start the frontend development server:
+```
+
+2. Start the frontend development server:
+
+```bash
 npm run start:frontend
-Open your browser and navigate to http://localhost:3000.
-Documentation
-Product Requirements Document (PRD)
+```
 
-Frontend Documentation
+3. Open your browser and navigate to http://localhost:3000.
 
-Backend Documentation
+---
 
-Third-Party Libraries Documentation
+### Documentation
 
-User Flow Documentation
+# Product Requirements Document (PRD)
 
-State Management Documentation
+# Frontend Documentation
 
-Design Specification Document
+# Backend Documentation
 
-Database Schema Documentation
+# Third-Party Libraries Documentation
 
-API Documentation
+# User Flow Documentation
 
-Contributing
-Fork the repository.
+# State Management Documentation
 
-Create a new branch:
+# Design Specification Document
+
+# Database Schema Documentation
+
+# API Documentation
+
+---
+
+### Contributing
+
+1. Fork the repository.
+
+2. Create a new branch:
+
+```bash
 git checkout -b feature/your-feature-name
-Commit your changes:
+```
 
+3. Commit your changes:
+
+```bash
 git commit -m "Add your feature"
-Push to the branch:
+```
+
+4. Push to the branch:
+
+```bash
 git push origin feature/your-feature-name
-Open a pull request.
+```
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+5.Open a pull request.
 
-Acknowledgments
-Next.js for the frontend framework.
+---
 
-NestJS for the backend framework.
+### License
 
-Chakra UI and Tailwind CSS for styling.
+## This project is licensed under the MIT License. See the LICENSE file for details.
 
-YouTube Data API, OpenAI API, and Deepseek API for third-party integrations.
+### Acknowledgments
+
+# Next.js for the frontend framework.
+
+# NestJS for the backend framework.
+
+# Chakra UI and Tailwind CSS for styling.
+
+# YouTube Data API, OpenAI API, and Deepseek API for third-party integrations.
